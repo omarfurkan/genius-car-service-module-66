@@ -115,6 +115,10 @@ app.get('/', (req, res) => {
     res.send('Running Genius Server');
 });
 
+app.get('/hero', (req, res) => {
+    res.send('hero meets heroku')
+})
+
 app.listen(port, () => {
     console.log('Listening ot port', port);
 });
